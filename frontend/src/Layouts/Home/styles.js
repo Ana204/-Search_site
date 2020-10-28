@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import backgroundImage from './img/bk.png';
 
 export const Container = styled.div`
-  width:100vw;
+  width:100%;
   display:flex;
   flex-direction: column;
   position : relative;
@@ -13,6 +13,7 @@ export const Container = styled.div`
     height:80vh;
     width:100%;
     background-color: #08A689;
+    position: relative;
       
       .content-wraper{
 
@@ -63,7 +64,7 @@ export const Container = styled.div`
 
           position:absolute;
           right:100px;
-          top:45%;
+          top:60%;
 
         }
 
@@ -85,6 +86,44 @@ export const Container = styled.div`
   .Bottom-part{
     min-height:500px;
     width:100%;
+
+    .content-wraper-bottom{
+      max-width:1180px;
+      margin:80px auto;
+      display: flex;
+      flex-direction:column;
+      .content-wraper-bottom-block-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .content-about-us {
+        margin-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        margin-left:30px;
+        margin-right:30px;
+
+        & h1 {
+          font-size:45px;
+          font-weight: 100;
+          color: #444;
+        }
+        & .line-under-title{
+          height:3px;
+          width:150px;
+          background-color:#F29A2E;
+          margin-bottom:50px;
+          margin-left:25px;
+        }
+        & p {
+          font-weight:100;
+          font-size:20px;
+          color: #444;
+        }
+      }
+
+    }
+
   }
 `;
 
@@ -97,7 +136,7 @@ const animation = keyframes`
 export const WaveImg = styled.img`
   width:200%;
   position: absolute;
-  bottom:52vh;
+  bottom:0vh;
   left:0;
   right:0;
  
