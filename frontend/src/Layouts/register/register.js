@@ -7,7 +7,10 @@ const Register =()=>{
     return(
       <div className="gradiente">
          <div className="container">
-            <h1> Cadastrar nova pesquisa </h1> 
+            <h2> Cadastrar nova pesquisa </h2> 
+            <div>
+               <FormQuestion/>
+            </div>
          </div>
       </div>
     )
