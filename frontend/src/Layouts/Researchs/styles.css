@@ -1,0 +1,32 @@
+.fundo-verde {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%),
+linear-gradient(0deg, #03AAB3, #03AAB3);
+}
+
+.container-branco {
+    display: flex;
+    background-color: #ffffff;
+    width: 800px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.container-branco h1{
+    display: flex;
+    color: #000000;
+    font-size: 30px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
