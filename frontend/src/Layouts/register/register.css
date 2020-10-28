@@ -1,0 +1,13 @@
+.gradiente{
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%),
+linear-gradient(0deg, #03AAB3, #03AAB3);
+}
+.container{
+    background-color: #ffffff;
+    width: 80%;
+    height: 100vh;
+    border-radius: 10px;
+}
