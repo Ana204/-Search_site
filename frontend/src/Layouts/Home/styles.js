@@ -12,7 +12,7 @@ export const Container = styled.div`
   .Top-part{
     height:80vh;
     width:100%;
-    background-color: #08A689;
+    background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%), #03AAB3;
     position: relative;
       
       .content-wraper{
