@@ -1,7 +1,7 @@
 .fundo-verde {
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%),
@@ -12,7 +12,7 @@ linear-gradient(0deg, #03AAB3, #03AAB3);
     display: flex;
     background-color: #ffffff;
     width: 80%;
-    height: 900px;
+    min-height: 900px;
     border-radius: 20px;
     flex-direction: column;
 }
@@ -25,9 +25,19 @@ linear-gradient(0deg, #03AAB3, #03AAB3);
     margin: auto;
     margin-top: 45px;
     flex: 1;
+    font-family: 'Roboto', sans-serif;
 }
 
 .area-cards {
+    display: flex;
     flex: 8;
     margin-left: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 500px;
+    margin: 0px 5px 0px 5px;
+    
 }
