@@ -1,0 +1,54 @@
+.container--aplication{
+    display: flex;
+    height: 100vh;
+  }
+  .container--img{
+    width: 60%;
+    /*https://www.designergraficopacks.com/wp-content/uploads/2020/01/a%CC%81rvores-em-preto-e-branco-1.jpg*/
+    background-image: url(https://www.designergraficopacks.com/wp-content/uploads/2020/01/a%CC%81rvores-em-preto-e-branco-1.jpg);
+    background-position: center;
+    background-size: center;
+    margin-right:-100px;
+  }
+  .container--login{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    -webkit-border-top-left-radius: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -moz-border-radius-topleft: 100px;
+    -moz-border-radius-bottomleft: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-left: 15px solid #ff0000bb;
+  }
+  .login--inter{
+    width: 350px;
+  }
+  @media only screen and (max-width: 1000px){
+    .container--img{
+      width: 100%;
+    }
+    .container--login{
+      position: absolute;
+      -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    .container--login{
+      width: 80%;
+      border-radius: 50px;
+      padding: 25px;
+    }
+  }
