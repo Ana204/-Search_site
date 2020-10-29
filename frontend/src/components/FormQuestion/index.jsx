@@ -26,39 +26,39 @@ function FormQuestion() {
 
       <div class="adicionar--pergunta">
         <label for=""> <h4>Adicionar pergunta</h4></label> <br/> 
-        <input type="text" class="titulo" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
+        <input type="text" className="titulo" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
       </div>
 
-
       <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Respostas</legend>
+        <div class="respostas">
+          <legend class="col-form-label col-sm-2 pt-0"> <h4> Respostas </h4> </legend>
           <div class="col-sm-10">
-            <div class="form-check">
-            <label class="form-check-label" for="gridRadios1">
-                A
-                <input type="text" onChange={e => setA(e.target.value)} />
+            <div class="valores">
+            <label class="" for="gridRadios1">
+                A 
+                <input className="resposta--a" type="text" onChange={e => setA(e.target.value)} />
               </label>
             </div>
-            <div class="form-check">
+            <div class="valores">
             <label class="form-check-label" for="gridRadios2">
                 B
-               <input type="text" onChange={e => setB(e.target.value)} />
+               <input className="resposta--b" type="text" onChange={e => setB(e.target.value)} />
               </label>
             </div>
-            <div class="form-check">
+            <div class="valores">
             <label class="form-check-label" for="gridRadios3">
                 C
-                <input type="text" onChange={e => setC(e.target.value)} />
+                <input className="resposta--c" type="text" onChange={e => setC(e.target.value)} />
               </label>
             </div>
-            <div class="form-check">
+            <div class="valores">
               <label class="form-check-label" for="gridRadios4">
                 D
-                <input type="text" onChange={e => setD(e.target.value)} />
+                <input className="resposta--d" type="text" onChange={e => setD(e.target.value)} />
               </label>
             </div>
           </div>
+
         </div>
       </fieldset>
 
