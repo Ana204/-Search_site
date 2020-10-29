@@ -21,7 +21,7 @@ function Home() {
                   <h4>Faca a sua parte, ajude a fazer um mundo melhor com sua opiniao.</h4>
                 </div>
                 <div class="btn_enter">
-                  Pesquisar
+                  Pesquisas
                 </div>
 
             </div>
@@ -38,13 +38,35 @@ function Home() {
                 <BlockInfoAbout img={Baleia}content="Preservando as espécies"/>
               </div>
               <div className="content-about-us">
-                <h1>Sobre nos</h1>
+                <h1>Sobre nós</h1>
                 <div className="line-under-title"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Fundada em 2020, a World atua promovendo e incentivando a sustentabilidade e a re-educação ambiental, acolhendo todos os individuos que se dispoem a participar de nossas pesquisas para o Movimento Verde, para que se unam à nós em prol de um mundo melhor.</p>
+
+                <p>Visamos sempre o bem-estar das pessoas e do nosso planeta, compartilhando conhecimentos valiosos e dicas que fazem toda a diferença. Fazemos uso das opiniões dos voluntários para conhecer melhor a conscientização de cada um e cada vez mais expandir o alcance do nosso movimento. </p>
+
+                <h1 className="second-title">O Movimento Verde</h1>
+                <div className="line-under-title"></div>
+
+                <p>Podemos resumir o Movimento Verde em quatro palavras: Reduzir, Reutilizar e Reciclar. Também conhecidas como os três R's da sustentabilidade, seu objetivo é minimizar o impacto ambiental causado pelo desperdício de materiais e descarte inadequado dos mesmos. </p>
+
+                <p>Mas você deve estar se perguntando: "E a quarta palavra?", e aqui está: O quarto R, Repensar. Acima de tudo, buscamos sempre abrir mais olhos e conscientizar cada vez mais pessoas sobre a preservação do meio ambiente, e tudo começa repensando as nossas ações para com ele. Todos podem participar, sem nenhum custo. Muito pelo contrário... com muitos benefícios.</p>
+
+                <p>E aí, o que está esperando para participar? Contribua você também!</p>
+
+
               </div>
 
             </div>
          </div>
+         {/*<footer></footer>*/}
+         <div className="card" style={{width: "18rem;"}}>
+          <img className="card-img-top" src="..." alt="Card image cap"/>
+          <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
      </Container>
   );
 }
