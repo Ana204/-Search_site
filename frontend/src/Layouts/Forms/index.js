@@ -3,7 +3,7 @@ import './styles.css'
 
 function Form() {
     return (
-        <body>
+        <div className="My_Body"> 
             <div className="Container">
                 <div className="page-title">
                     <h1>Pesquisa Ambiental</h1>
@@ -139,7 +139,7 @@ function Form() {
                     <button type="button" class="btn">Enviar</button>
                 </div>
             </div>
-        </body>
+        </div>
     );
 }
 

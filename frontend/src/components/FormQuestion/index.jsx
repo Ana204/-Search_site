@@ -6,14 +6,44 @@ import './styles.css'
 function FormQuestion() {
 
   //iniciando estados
-  const [titulo, setTitulo] = useState()
-  const [questao, setQuesta] = useState()
-  const [a, setA] = useState()
-  const [b, setB] = useState()
-  const [c, setC] = useState()
-  const [d, setD] = useState()
-  const [correct, setCorrect] = useState()
-  const [feedback, setFeedback] = useState()
+  const [titulo, setTitulo] = useState('')
+  const [questao, setQuesta] = useState('')
+  const [a, setA] = useState('')
+  const [b, setB] = useState('')
+  const [c, setC] = useState('')
+  const [d, setD] = useState('')
+  const [correct, setCorrect] = useState('')
+  const [feedback, setFeedback] = useState('')
+
+
+
+  function registerApi () {
+
+    let url = 'https://api.sheety.co/be587a93d2a2be688fa695763f9eb574/meioAmbiente/disponiveis';
+    
+    let body = {
+      disponiveis:{
+        "title": titulo,
+        "question": questao,
+        "a": a,
+        "b": b,
+        "c": c,
+        "d": d,
+        "correct": correct,
+        "feedback": feedback 
+      }
+    }
+    console.log(body)
+    
+    fetch(url, {
+      method: 'post',
+      body: JSON.stringify(body)
+    })
+    .then((res) => console.log(res)).catch(err => console.log(err));
+
+ }
+
+
 
   return (
     <form >
@@ -76,7 +106,10 @@ function FormQuestion() {
         <textarea class=" area--texto" id="exampleFormControlTextarea1" rows="3" onChange={e => setFeedback(e.target.value)}></textarea>
         <p>{feedback}</p>
       </div>
+      
+      <div className="btn btn-danger" onClick={registerApi}> cadastra pergunta </div>
     </form>
+
   )
 }
 

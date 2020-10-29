@@ -2,6 +2,7 @@ import React from 'react';
 import Login from './components/login/login'
 import Register from './Layouts/register/register'
 import Home from './Layouts/Home'
+import Teste from './components/teste/teste'
 import Form from './Layouts/Forms/index'
 
 
@@ -13,10 +14,11 @@ const Routes = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/Pesquisas" component={Researchs}/>
+            <Route path="/pesquisas" component={Researchs}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
-            <Route path="/Forms" component={Form}/>
+            <Route path="/teste" component={Teste}/>
+            <Route path="/forms" component={Form}/>
         </Switch>
     </BrowserRouter>
 );
