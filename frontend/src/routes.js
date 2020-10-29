@@ -2,6 +2,7 @@ import React from 'react';
 import Login from './components/login/login'
 import Register from './Layouts/register/register'
 import Home from './Layouts/Home'
+import Teste from './components/teste/teste'
 
 
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
@@ -15,6 +16,7 @@ const Routes = () => (
             <Route path="/Pesquisas" component={Researchs}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
+            <Route path="/teste" component={Teste}/>
         </Switch>
     </BrowserRouter>
 );

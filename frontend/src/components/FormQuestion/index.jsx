@@ -5,14 +5,44 @@ import React, {useState} from 'react';
 function FormQuestion() {
 
   //iniciando estados
-  const [titulo, setTitulo] = useState()
-  const [questao, setQuesta] = useState()
-  const [a, setA] = useState()
-  const [b, setB] = useState()
-  const [c, setC] = useState()
-  const [d, setD] = useState()
-  const [correct, setCorrect] = useState()
-  const [feedback, setFeedback] = useState()
+  const [titulo, setTitulo] = useState('')
+  const [questao, setQuesta] = useState('')
+  const [a, setA] = useState('')
+  const [b, setB] = useState('')
+  const [c, setC] = useState('')
+  const [d, setD] = useState('')
+  const [correct, setCorrect] = useState('')
+  const [feedback, setFeedback] = useState('')
+
+
+
+  function registerApi () {
+
+    let url = 'https://api.sheety.co/be587a93d2a2be688fa695763f9eb574/meioAmbiente/disponiveis';
+    
+    let body = {
+      disponiveis:{
+        "title": titulo,
+        "question": questao,
+        "a": a,
+        "b": b,
+        "c": c,
+        "d": d,
+        "correct": correct,
+        "feedback": feedback 
+      }
+    }
+    console.log(body)
+    
+    fetch(url, {
+      method: 'post',
+      body: JSON.stringify(body)
+    })
+    .then((res) => console.log(res)).catch(err => console.log(err));
+
+ }
+
+
 
   return (
     <form>
@@ -60,12 +90,13 @@ function FormQuestion() {
       </fieldset>
 
       <form class="form-inline">
-        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-          <option selected>Choose...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Resposta certa !!</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" onChange={e => setCorrect(e.target.value)}>
+          <option selected value="null"></option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
         </select>
       </form>
 
@@ -74,7 +105,10 @@ function FormQuestion() {
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" onChange={e => setFeedback(e.target.value)}></textarea>
         <p>{feedback}</p>
       </div>
+      
+      <div className="btn btn-danger" onClick={registerApi}> cadastra pergunta </div>
     </form>
+
   )
 }
 
