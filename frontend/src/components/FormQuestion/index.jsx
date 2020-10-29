@@ -19,10 +19,10 @@ function FormQuestion() {
 
   function registerApi () {
 
-    let url = 'https://api.sheety.co/be587a93d2a2be688fa695763f9eb574/meioAmbiente/disponiveis';
+    let url = 'https://api.sheety.co/4ab649c7ce6367df9437a288b09ed6f4/disponiveis/disponiveis';
     
     let body = {
-      disponiveis:{
+      disponivei:{
         "title": titulo,
         "question": questao,
         "a": a,
@@ -33,11 +33,17 @@ function FormQuestion() {
         "feedback": feedback 
       }
     }
+    
     console.log(body)
     
     fetch(url, {
       method: 'post',
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
+      header: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+        'Origin': '*'
+      }
     })
     .then((res) => console.log(res)).catch(err => console.log(err));
 

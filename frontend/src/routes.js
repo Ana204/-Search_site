@@ -18,7 +18,7 @@ const Routes = () => (
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
             <Route path="/teste" component={Teste}/>
-            <Route path="/forms" component={Form}/>
+            <Route path="/forms" render={(props) => <Form {...props}/>}/>
         </Switch>
     </BrowserRouter>
 );

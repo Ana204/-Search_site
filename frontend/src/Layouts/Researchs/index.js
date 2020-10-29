@@ -2,6 +2,7 @@ import React, { useEffect, useState }from 'react';
 import './styles.css';
 import ImagemWorld from './img/worldverde.jpg';
 import axios from 'axios'
+import {Redirect} from 'react-router-dom'
 
 const Researchs = () => {
 
@@ -12,7 +13,7 @@ const Researchs = () => {
     
     useEffect(() => {
 
-        let url = 'https://api.sheety.co/be587a93d2a2be688fa695763f9eb574/meioAmbiente/disponiveis';
+        let url = 'https://api.sheety.co/4ab649c7ce6367df9437a288b09ed6f4/disponiveis/disponiveis';
 
         axios
             .get(url)
@@ -38,7 +39,7 @@ const Researchs = () => {
                             <div class="card-body">
                                 <h5 class="card-title">{element.title}</h5>
                                 <p class="card-text">{element.question}</p>
-                                <a href="#" class="btn btn-primary">Responder</a>
+                                <a href="" class="btn btn-primary">Responder</a>
                             </div>
                         </div>
                     ))

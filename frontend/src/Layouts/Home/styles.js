@@ -39,6 +39,7 @@ export const Container = styled.div`
           line-height: 70px;
         }
         .btn_enter{
+          text-decoration: none;
           background: #F29A2E;
           background-image: -webkit-linear-gradient(top, #F29A2E, #F2C029);
           background-image: -moz-linear-gradient(top, #F29A2E, #F2C029);

@@ -2,8 +2,10 @@ import React from 'react';
 import Wave from './img/waves.png';
 import Logo from './img/logo.png'
 import BlockInfoAbout from '../../components/BlockInfoAbout'
+import {Link} from 'react-router-dom'
 
 import { Container, WaveImg, LogoImage } from './styles';
+
 
 //Importing the Icons for About 
 import Reciclagem from '../../components/BlockInfoAbout/img/reciclar.png'
@@ -21,7 +23,7 @@ function Home() {
                   <h4>Faca a sua parte, ajude a fazer um mundo melhor com sua opiniao.</h4>
                 </div>
                 <div class="btn_enter">
-                  Pesquisas
+                  <Link to="/pesquisas">Pesquisas</Link>
                 </div>
 
             </div>
@@ -59,14 +61,6 @@ function Home() {
             </div>
          </div>
          {/*<footer></footer>*/}
-         <div className="card" style={{width: "18rem;"}}>
-          <img className="card-img-top" src="..." alt="Card image cap"/>
-          <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
      </Container>
   );
 }
