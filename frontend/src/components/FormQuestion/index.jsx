@@ -16,17 +16,16 @@ function FormQuestion() {
 
   return (
     <form>
-    <div className="titulo">
-      <div class="form-group">
-        <label for="">Insira um título para nova pesquisa</label>
-        <input type="text" class="form-control" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
-      </div>
-    </div>
+  
+        <div class="form-group">
+          <label for="">Insira um título para nova pesquisa</label> <br/> 
+           <input type="text" class="titulo" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
+         </div>
+      
 
-
       <div class="form-group">
-        <label for="">Adicionar pergunta</label>
-        <input type="text" class="form-control" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
+        <label for="">Adicionar pergunta</label> <br/> 
+        <input type="text" class="titulo" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
       </div>
 
 

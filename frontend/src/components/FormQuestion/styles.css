@@ -1,4 +1,5 @@
-.titulo, .form-control{
+
+.titulo{
     display: block;
     width: 50%;
     padding: .375rem .75rem;
@@ -6,3 +7,4 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
