@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import ImagemWorld from './img/worldverde.jpg';
+import ImagemWorld from './img/worldverde.JPG';
 
 const Researchs = () => {
     return (
