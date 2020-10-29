@@ -1,10 +1,18 @@
-
+.titulo--pesquisa, .adicionar--pergunta, label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
 .titulo{
     display: block;
-    width: 50%;
-    padding: .375rem .75rem;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 500px;
+    padding: .600rem .95rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da
+}
+.titulo:hover{
+    border: 1px solid #F29A2E; 
 }
 

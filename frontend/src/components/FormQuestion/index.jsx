@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './styles.css'
 
 // import { Container } from './styles';
 
@@ -17,14 +18,14 @@ function FormQuestion() {
   return (
     <form>
   
-        <div class="form-group">
-          <label for="">Insira um título para nova pesquisa</label> <br/> 
-           <input type="text" class="titulo" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
+        <div class="titulo--pesquisa">
+          <label for=""> <h4>Título da pesquisa</h4> </label>  
+           <input type="text" className="titulo" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
          </div>
       
 
-      <div class="form-group">
-        <label for="">Adicionar pergunta</label> <br/> 
+      <div class="adicionar--pergunta">
+        <label for=""> <h4>Adicionar pergunta</h4></label> <br/> 
         <input type="text" class="titulo" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
       </div>
 
