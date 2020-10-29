@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../Layouts/register/register.css'
 import FormQuestion from '../../components/FormQuestion'
 
@@ -11,6 +11,7 @@ const Register =()=>{
             <div>
                <FormQuestion/>
             </div>
+            <div className="btn btn-primary">Enviar</div>
          </div>
       </div>
     )

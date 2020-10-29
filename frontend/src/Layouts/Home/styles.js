@@ -108,6 +108,12 @@ export const Container = styled.div`
           font-weight: 100;
           color: #444;
         }
+        & .second-title{
+          font-size:40px;
+          font-weight: 100;
+          color: #444;
+          margin-top:50px;
+        }
         & .line-under-title{
           height:3px;
           width:150px;
