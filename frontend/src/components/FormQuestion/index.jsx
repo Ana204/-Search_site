@@ -16,19 +16,15 @@ function FormQuestion() {
   const [feedback, setFeedback] = useState()
 
   return (
-    <form>
-  
+    <form >
         <div class="titulo--pesquisa">
           <label for="">Título da pesquisa </label>  
-           <input type="text" className="titulo" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
+           <input type="text" className="titulo" id="" placeholder="" onChange={e => setTitulo(e.target.value)} />
          </div>
-      
-
       <div class="adicionar--pergunta">
         <label for="">Adicionar pergunta</label> <br/> 
-        <input type="text" className="titulo" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
+        <input type="text" className="titulo" id="" placeholder="" onChange={e => setQuesta(e.target.value)} />
       </div>
-
       <fieldset class="form-group">
         <div class="respostas">
           <legend class="col-form-label col-sm-2 pt-0"> Respostas  </legend>
@@ -36,24 +32,28 @@ function FormQuestion() {
             <div class="valores">
             <label class="" for="gridRadios1">
                 A 
+                <div className="line-under-title"></div>
                 <input className="resposta--a" type="text" onChange={e => setA(e.target.value)} />
               </label>
             </div>
             <div class="valores">
             <label class="form-check-label" for="gridRadios2">
                 B
+                <div className="line-under-title"></div>
                <input className="resposta--b" type="text" onChange={e => setB(e.target.value)} />
               </label>
             </div>
             <div class="valores">
             <label class="form-check-label" for="gridRadios3">
                 C
+                <div className="line-under-title"></div>
                 <input className="resposta--c" type="text" onChange={e => setC(e.target.value)} />
               </label>
             </div>
             <div class="valores">
               <label class="form-check-label" for="gridRadios4">
                 D
+                <div className="line-under-title"></div>
                 <input className="resposta--d" type="text" onChange={e => setD(e.target.value)} />
               </label>
             </div>
@@ -71,7 +71,6 @@ function FormQuestion() {
         </select>
       </form>
       </div>
-
       <div class="form-group">
         <label className="feedback" for="exampleFormControlTextarea1">Feedback</label>
         <textarea class=" area--texto" id="exampleFormControlTextarea1" rows="3" onChange={e => setFeedback(e.target.value)}></textarea>

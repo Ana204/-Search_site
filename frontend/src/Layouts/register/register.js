@@ -11,7 +11,7 @@ const Register =()=>{
             <div>
                <FormQuestion/>
             </div>
-            <div className="btn btn-primary">Enviar</div>
+            <button className="btn--enviar">Enviar</button> 
          </div>
       </div>
     )
