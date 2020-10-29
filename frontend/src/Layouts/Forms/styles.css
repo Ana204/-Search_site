@@ -1,7 +1,7 @@
-body {
+.My_Body {
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%), #03AAB3;
@@ -11,7 +11,7 @@ body {
     background: #FAFAFA;
     box-shadow: #526e6d 3px 3px 10px;
     width: 80%;
-    height: 80%;
+    min-height: 80%;
     border-radius: 10px;
     margin: 80px 100px 80px 100px;
     padding: 50px;
