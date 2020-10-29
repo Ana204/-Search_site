@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './styles.css'
 
 // import { Container } from './styles';
 
@@ -46,63 +47,64 @@ function FormQuestion() {
 
   return (
     <form>
-      <div class="form-group">
-        <label for="">Insira um título para nova pesquisa</label>
-        <input type="text" class="form-control" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
-      </div>
+  
+        <div class="titulo--pesquisa">
+          <label for="">Título da pesquisa </label>  
+           <input type="text" className="titulo" id="" placeholder="Ex:" onChange={e => setTitulo(e.target.value)} />
+         </div>
+      
 
-      <div class="form-group">
-        <label for="">Adicionar pergunta</label>
-        <input type="text" class="form-control" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
+      <div class="adicionar--pergunta">
+        <label for="">Adicionar pergunta</label> <br/> 
+        <input type="text" className="titulo" id="" placeholder="Ex:" onChange={e => setQuesta(e.target.value)} />
       </div>
-
 
       <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Respostas</legend>
+        <div class="respostas">
+          <legend class="col-form-label col-sm-2 pt-0"> Respostas  </legend>
           <div class="col-sm-10">
-            <div class="form-check">
-            <label class="form-check-label" for="gridRadios1">
-                A
-                <input type="text" onChange={e => setA(e.target.value)} />
+            <div class="valores">
+            <label class="" for="gridRadios1">
+                A 
+                <input className="resposta--a" type="text" onChange={e => setA(e.target.value)} />
               </label>
             </div>
-            <div class="form-check">
+            <div class="valores">
             <label class="form-check-label" for="gridRadios2">
                 B
-               <input type="text" onChange={e => setB(e.target.value)} />
+               <input className="resposta--b" type="text" onChange={e => setB(e.target.value)} />
               </label>
             </div>
-            <div class="form-check">
+            <div class="valores">
             <label class="form-check-label" for="gridRadios3">
                 C
-                <input type="text" onChange={e => setC(e.target.value)} />
+                <input className="resposta--c" type="text" onChange={e => setC(e.target.value)} />
               </label>
             </div>
-            <div class="form-check">
+            <div class="valores">
               <label class="form-check-label" for="gridRadios4">
                 D
-                <input type="text" onChange={e => setD(e.target.value)} />
+                <input className="resposta--d" type="text" onChange={e => setD(e.target.value)} />
               </label>
             </div>
           </div>
         </div>
       </fieldset>
-
+      <div className="respota--correta"> 
       <form class="form-inline">
-        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Resposta certa !!</label>
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" onChange={e => setCorrect(e.target.value)}>
-          <option selected value="null"></option>
-          <option value="A">A</option>
-          <option value="B">B</option>
-          <option value="C">C</option>
-          <option value="D">D</option>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Resposta-Correta</label>
+        <select class="selecao" id="inlineFormCustomSelectPref">
+          <option selected> A</option>
+          <option value="1">B</option>
+          <option value="2">C</option>
+          <option value="3">D</option>
         </select>
       </form>
+      </div>
 
       <div class="form-group">
-        <label for="exampleFormControlTextarea1">Feedback</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" onChange={e => setFeedback(e.target.value)}></textarea>
+        <label className="feedback" for="exampleFormControlTextarea1">Feedback</label>
+        <textarea class=" area--texto" id="exampleFormControlTextarea1" rows="3" onChange={e => setFeedback(e.target.value)}></textarea>
         <p>{feedback}</p>
       </div>
       
