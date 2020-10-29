@@ -5,10 +5,13 @@ import React from 'react';
 function FormQuestion() {
   return (
     <form>
+    <div className="titulo">
       <div class="form-group">
         <label for="">Insira um título para nova pesquisa</label>
         <input type="text" class="form-control" id="" placeholder="Ex:" />
       </div>
+    </div>
+
 
       <div class="form-group">
         <label for="">Adicionar pergunta</label>
