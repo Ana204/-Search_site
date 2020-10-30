@@ -6,11 +6,9 @@
 linear-gradient(0deg, #03AAB3, #03AAB3);
 }
 .container{
-    background-color: #ffffff;
     width: 70%;
-    min-height: 100vh;
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
 }
 
 .container h2{

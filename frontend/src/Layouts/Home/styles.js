@@ -4,10 +4,11 @@ import backgroundImage from './img/bk.png';
 
 export const Container = styled.div`
   width:100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   position : relative;
   overflow:hidden;
+  background-color: none;
 
   .Top-part{
     height:80vh;
@@ -222,5 +223,19 @@ export const LogoImage = styled.img`
   @media (max-width: 800px) {
     height:0;
     width:0;
+  }
+`;
+export const Container2 = styled.div`
+  background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%), #03AAB3;
+
+  a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p{
+    font-family: 'Roboto', sans-serif;
+    align-itens: center;
+    font-size: 17px;
   }
 `;
