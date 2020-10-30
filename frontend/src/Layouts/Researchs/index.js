@@ -43,8 +43,9 @@ const Researchs = () => {
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                  Sed pharetra egestas ipsum eu sagittis. In consequat lorem ut ante iaculis egestas. </p>
                                 <div>
-                                 <Link to="/forms" >Responder</Link> 
-                                <button  class="btn--responder"> Responder </button> 
+                                 <Link to="/forms" > 
+                                <button  class="btn--responder"> Responder </button>
+                                </Link> 
                                 </div>
                             </div>
                         </div>
