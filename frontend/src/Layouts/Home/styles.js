@@ -29,8 +29,6 @@ export const Container = styled.div`
           font-size:76px;
           font-weight: 900;
           line-height: 70px;
-  
-          
         }
         .Info h4{
           max-width: 700px;
@@ -132,6 +130,29 @@ export const Container = styled.div`
     }
 
   }
+
+   
+/* @media only screen and (max-width: 900px){
+  .content-wraper{
+    max-width: 450px;
+  }
+  .Info{
+    width: 300px;
+    height: 500px;
+    background-color: red;
+  }
+  .Info h1{
+        width: 100px;
+        color: black;
+        } 
+        .Info h4{
+          font-size:10px;
+          font-weight: 10;
+          line-height: 10px;
+        }
+  } */
+
+
 `;
 
 const animation = keyframes`
@@ -168,6 +189,7 @@ export const WaveImg = styled.img`
     opacity:.5;
     z-index:12;
   }
+
 
 
 `;

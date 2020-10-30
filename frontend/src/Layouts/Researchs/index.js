@@ -2,10 +2,13 @@ import React, { useEffect, useState }from 'react';
 import './styles.css';
 import ImagemWorld from './img/worldverde.jpg';
 import axios from 'axios'
-import {Redirect} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
+import Form from '../Forms';
 
 const Researchs = () => {
 
+   
 
     const [dados, setDados] = useState([])
 
@@ -26,7 +29,6 @@ const Researchs = () => {
 
     return (
         <div className="fundo-verde">
-            <div>Listar</div>
             <div className="container-branco">
 
                 <h1>Pesquisas disponíveis</h1>
@@ -36,10 +38,14 @@ const Researchs = () => {
                     dados.map((element) => (
                         <div class="card" style={{width: "18rem"}} >
                             <img class="card-img-top" src={ImagemWorld} alt="Imagem de capa do card"/>
-                            <div class="card-body">
+                            <div class="cardword">
                                 <h5 class="card-title">{element.title}</h5>
-                                <p class="card-text">{element.question}</p>
-                                <a href="" class="btn btn-primary">Responder</a>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 Sed pharetra egestas ipsum eu sagittis. In consequat lorem ut ante iaculis egestas. </p>
+                                <div>
+                                 <Link to="/forms" >Responder</Link> 
+                                <button  class="btn--responder"> Responder </button> 
+                                </div>
                             </div>
                         </div>
                     ))

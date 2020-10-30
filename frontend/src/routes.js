@@ -2,7 +2,6 @@ import React from 'react';
 import Login from './components/login/login'
 import Register from './Layouts/register/register'
 import Home from './Layouts/Home'
-import Teste from './components/teste/teste'
 import Form from './Layouts/Forms/index'
 
 
@@ -17,7 +16,6 @@ const Routes = () => (
             <Route path="/pesquisas" component={Researchs}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
-            <Route path="/teste" component={Teste}/>
             <Route path="/forms" render={(props) => <Form {...props}/>}/>
         </Switch>
     </BrowserRouter>
