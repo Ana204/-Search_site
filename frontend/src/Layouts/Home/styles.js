@@ -231,11 +231,13 @@ export const Container2 = styled.div`
   a{
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px
   }
 
   p{
-    font-family: 'Roboto', sans-serif;
+    font-family: Calibri;
     align-itens: center;
-    font-size: 17px;
+    font-size: 20px;
+    width: 88vh;
   }
 `;

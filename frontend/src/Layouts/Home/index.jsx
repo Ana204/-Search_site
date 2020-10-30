@@ -21,7 +21,7 @@ function Home() {
                 <LogoImage src={Logo} alt="Logo word" />
                 <div className="Info">
                   <h1>COM SUA AJUDA PODEMOS SALVAR O PLANETA</h1>
-                  <h4>Faca a sua parte, ajude a fazer um mundo melhor com sua opiniao.</h4>
+                  <h4>Faça a sua parte, ajude a fazer um mundo melhor com sua opinião.</h4>
                 </div>
                 <div class="btn_enter">
                   <Link to="/pesquisas">Pesquisas</Link>
@@ -66,22 +66,22 @@ function Home() {
               <MDBRow className="pt-5 mb-3 text-center d-flex justify-content-center">
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">Sobre nós</a>
+                    <a href="#!">SOBRE NÓS</a>
                   </h6>
                 </MDBCol>
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">Pesquisas</a>
+                    <a href="#!">PESQUISAS</a>
                   </h6>
                 </MDBCol>                
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">Ajuda</a>
+                    <a href="#!">AJUDA</a>
                   </h6>
                 </MDBCol>
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">Contato</a>
+                    <a href="#!">CONTATO</a>
                   </h6>
                 </MDBCol>
               </MDBRow>
