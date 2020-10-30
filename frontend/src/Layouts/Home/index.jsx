@@ -22,10 +22,11 @@ function Home() {
                   <h1>COM SUA AJUDA PODEMOS SALVAR O PLANETA</h1>
                   <h4>Faca a sua parte, ajude a fazer um mundo melhor com sua opiniao.</h4>
                 </div>
-                <div class="btn_enter">
-                  <Link to="/pesquisas">Pesquisas</Link>
-                </div>
-
+                <Link to="/pesquisas">
+                  <div class="btn_enter">
+                    Pesquisas
+                  </div>
+                </Link>
             </div>
 
             <WaveImg src={Wave} alt="image waves"/>

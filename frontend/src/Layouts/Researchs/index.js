@@ -6,6 +6,7 @@ import {Link, Route} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
 import Form from '../Forms';
 
+
 const Researchs = () => {
 
    
@@ -16,7 +17,7 @@ const Researchs = () => {
     
     useEffect(() => {
 
-        let url = 'https://api.sheety.co/4ab649c7ce6367df9437a288b09ed6f4/disponiveis/disponiveis';
+        let url = 'https://api.sheety.co/0166d8c33451b582d837428a4a720801/disponiveis/disponiveis';
 
         axios
             .get(url)
@@ -30,7 +31,7 @@ const Researchs = () => {
     return (
         <div className="fundo-verde">
             <div className="container-branco">
-             <button className="voltar"> Voltar </button>
+            <Link to="/"><button className="voltar"> Voltar </button></Link>
                 <h1>Pesquisas disponíveis</h1>
             <div className="area-cards">
                 {/* LISTANDO TODAS AS PESQUISAS */}
