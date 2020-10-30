@@ -36,6 +36,8 @@ export const Container = styled.div`
           font-weight: 100;
           line-height: 70px;
         }
+
+
         .btn_enter{
           text-decoration: none;
           background: #F29A2E;
@@ -80,7 +82,35 @@ export const Container = styled.div`
           border-radius: 20px;
           text-decoration: none;
         }
+        @media (max-width: 800px){
+          .Info{
+            margin-top:420px;
+            width: 350px;
+            height: 500px;
+            margin-left:0px;
+
+          }
+          .Info h1{
+            max-width: 350px;
+            font-size:50px;
+            font-weight: 900;
+            line-height: 40px;
+          } 
+          .Info h4{
+           display:none;  
+          }
+          .btn_enter{
+            top:75%;
+          }
+          
+        }
       }
+  }
+
+  @media (max-width: 800px) {
+    .Top-part{
+      height:900px;
+    }
   }
   .Bottom-part{
     min-height:500px;
@@ -96,6 +126,7 @@ export const Container = styled.div`
         flex-direction: row;
         justify-content: space-around;
       }
+
       .content-about-us {
         margin-top: 50px;
         font-family: 'Roboto', sans-serif;
@@ -126,31 +157,22 @@ export const Container = styled.div`
           color: #444;
         }
       }
+      @media (max-width: 800px) {
+        .content-wraper-bottom-block-info{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .content-about-us{
+          width:80%;
+        }
+      }
 
     }
 
   }
 
    
-/* @media only screen and (max-width: 900px){
-  .content-wraper{
-    max-width: 450px;
-  }
-  .Info{
-    width: 300px;
-    height: 500px;
-    background-color: red;
-  }
-  .Info h1{
-        width: 100px;
-        color: black;
-        } 
-        .Info h4{
-          font-size:10px;
-          font-weight: 10;
-          line-height: 10px;
-        }
-  } */
 
 
 `;
@@ -197,4 +219,8 @@ export const WaveImg = styled.img`
 export const LogoImage = styled.img`
   height:200px;
   width:350px;
+  @media (max-width: 800px) {
+    height:0;
+    width:0;
+  }
 `;

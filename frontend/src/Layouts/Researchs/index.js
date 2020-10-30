@@ -2,7 +2,7 @@ import React, { useEffect, useState }from 'react';
 import './styles.css';
 import ImagemWorld from './img/worldverde.jpg';
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
 import Form from '../Forms';
 
@@ -40,15 +40,15 @@ const Researchs = () => {
                             <img class="card-img-top" src={ImagemWorld} alt="Imagem de capa do card"/>
                             <div class="cardword">
                                 <h5 class="card-title">{element.title}</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                 Sed pharetra egestas ipsum eu sagittis. In consequat lorem ut ante iaculis egestas. </p>
+                                <p class="card-text">{element.description}</p>
                                 <div>
-                                 <Link to="/forms" > 
+                                 <Link to={element.url} teste={element.referencia} > 
                                 <button  class="btn--responder"> Responder </button>
                                 </Link> 
                                 </div>
                             </div>
                         </div>
+                        
                     ))
                 }
 

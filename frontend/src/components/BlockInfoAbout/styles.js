@@ -28,6 +28,9 @@ export const Container = styled.div`
       font-weight: 100;
   }
 
+  @media (max-width: 800px) {
+    width:80%;
+  }
 `;
 
 export const ImgIconAbout = styled.img`

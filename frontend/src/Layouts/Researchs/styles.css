@@ -60,3 +60,7 @@ h5{
     font-size: 20px;
     margin-right: 10px;
   }
+
+  .card-text{
+      font-weight: 100;
+  }
