@@ -5,6 +5,7 @@ function Form() {
     return (
         <div className="My_Body"> 
             <div className="Container">
+            <button className="voltar"> Voltar </button>
                 <div className="page-title">
                     <h1>Pesquisa Ambiental</h1>
                     <h5>Responda às questões para concluir a pesquisa:</h5>
