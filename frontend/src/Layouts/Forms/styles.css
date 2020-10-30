@@ -61,3 +61,13 @@ p{
     color: #FAFAFA;
     background: #37848C;
 }
+.voltar{
+    background:    #37848c;
+    border-radius: 12px;
+    width:         160px;
+    height:        50px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/50px "Ubuntu", sans-serif;
+    text-align:    center;
+  }

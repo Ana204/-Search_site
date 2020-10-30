@@ -30,7 +30,7 @@ const Researchs = () => {
     return (
         <div className="fundo-verde">
             <div className="container-branco">
-
+             <button className="voltar"> Voltar </button>
                 <h1>Pesquisas disponíveis</h1>
             <div className="area-cards">
                 {/* LISTANDO TODAS AS PESQUISAS */}
