@@ -5,10 +5,12 @@
     background: linear-gradient(180deg, #08A689 0%, rgba(255, 255, 255, 0) 100%),
 linear-gradient(0deg, #03AAB3, #03AAB3);
 }
-.container{
+.container_register{
     width: 70%;
     border-radius: 10px;
     padding: 10px;
+    margin: auto;
+    background-color: #ffffff;
 }
 
 .container h2{
