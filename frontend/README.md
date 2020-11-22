@@ -45,7 +45,14 @@ $ git clone https://github.com/denison3965/-Search_site.git <br>
  npm start or <br>
  yarn start <br>
 
-### `Contributing`
+### `Contributing` <br>
+
+- Ana Lucia Ferreira Gomes [GitHub](https://github.com/Ana204) <br> 
+- Denison de Almeida Portela [GitHub](https://github.com/denison3965) <br>
+- Nicolas Silva [GitHub](https://github.com/nicoringa) <br>
+- Rebecca Ramos [GitHub](https://github.com/ramos-r) <br>
+- Luan Tavares [GitHub](https://github.com/LuanTavares13) 
+
 
 Thank you!
 
