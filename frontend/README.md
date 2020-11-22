@@ -23,22 +23,27 @@ _"To reduce, to reuse and to recycle."._ <br>
 - 🔗 **Sequelize** —  Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server, <br>
 - 🔗 **Express** — Express is a minimal and flexible Node.js web application
 
-## `Functionalities`
+### `Functionalities`
 1 - When the user enters the site there will be a research button, where he will be redirected to the research, where he can answer the questions, <br>
 2 - Anyone can answer the questions, <br>
 3 - The user will only have access to the home page and the search page to answer, <br>
 4 - The registration page will only have access to those registered in the database, <br>
 5 - Who can have access to the database are specialized people, <br>
-6 - Only specialized people can register the questions / surveys in the database. <br>
+6 - Only specialized people can register research and questions in the database. <br>
+
+**Cloning the Repository** <br>
+
+$ git clone https://github.com/denison3965/-Search_site.git <br>
+
+
+**Installing dependencies** <br>
+
+- npm install or yarn add
+ 
 ### `Getting Started`
 
-**Cloning the Repository** 
-
-**Installing dependencies**
-
-### `Connecting the App with the Server` 
-
-### `Getting started`
+## npm start or <br>
+## yarn start <br>
 
 ### `Contributing`
 
