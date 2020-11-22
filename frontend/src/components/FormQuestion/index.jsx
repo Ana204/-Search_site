@@ -113,7 +113,7 @@ function FormQuestion() {
         <p>{feedback}</p>
       </div>
       
-      <div className="btn btn-danger" onClick={registerApi}> cadastra pergunta </div>
+      {/* <div className="btn btn-danger" onClick={registerApi}> cadastra pergunta </div> */}
     </form>
 
   )

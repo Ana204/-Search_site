@@ -13,7 +13,7 @@ linear-gradient(0deg, #03AAB3, #03AAB3);
     background-color: #ffffff;
 }
 
-.container h2{
+h2{
     color: white;
     -webkit-animation:change-color 4s ease 0s infinite normal;
     -moz-animation:change-color 4s ease 0s infinite normal;

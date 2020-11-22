@@ -67,29 +67,29 @@ function Home() {
               <MDBRow className="pt-5 mb-3 text-center d-flex justify-content-center">
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">SOBRE NÓS</a>
+                    <a href="">SOBRE NÓS</a>
                   </h6>
                 </MDBCol>
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">PESQUISAS</a>
+                    <a href="">PESQUISAS</a>
                   </h6>
                 </MDBCol>                
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">AJUDA</a>
+                    <a href="">AJUDA</a>
                   </h6>
                 </MDBCol>
                 <MDBCol md="2" className="b-3">
                   <h6 className="title font-weight-bold">
-                    <a href="#!">CONTATO</a>
+                    <a href="">CONTATO</a>
                   </h6>
                 </MDBCol>
               </MDBRow>
               <hr className="rgba-white-light" style={{ margin: "0 15%" }} />
               <MDBRow className="d-flex text-center justify-content-center mb-md-0 mb-4">
                 <MDBCol md="8" sm="12" className="mt-5">
-                  <p style={{ lineHeight: "1.6rem"}}>
+                  <p style={{ lineHeight: "1.6rem", textAlign:"justify"}}>
                   Fundada em 2020, a World atua promovendo e incentivando a sustentabilidade e a re-educação ambiental, acolhendo todos os individuos que se dispoem a participar de nossas pesquisas para o Movimento Verde, para que se unam à nós em prol de um mundo melhor.
                   </p>
                 </MDBCol>
