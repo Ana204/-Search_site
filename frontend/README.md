@@ -1,4 +1,4 @@
-#Search_site
+# Search_site
 
 ![Preview-Screens](https://github.com/denison3965/-Search_site/blob/main/frontend/imgREADME.png)
 ![Preview-Screens](https://github.com/denison3965/-Search_site/blob/main/frontend/pesquisas.png)
@@ -24,7 +24,12 @@ _"To reduce, to reuse and to recycle."._ <br>
 - 🔗 **Express** — Express is a minimal and flexible Node.js web application
 
 ## `Functionalities`
-
+1 - When the user enters the site there will be a research button, where he will be redirected to the research, where he can answer the questions, <br>
+2 - Anyone can answer the questions, <br>
+3 - The user will only have access to the home page and the search page to answer, <br>
+4 - The registration page will only have access to those registered in the database, <br>
+5 - Who can have access to the database are specialized people, <br>
+6 - Only specialized people can register the questions / surveys in the database. <br>
 ### `Getting Started`
 
 **Cloning the Repository** 
