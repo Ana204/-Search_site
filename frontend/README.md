@@ -36,14 +36,14 @@ _"To reduce, to reuse and to recycle."._ <br>
 $ git clone https://github.com/denison3965/-Search_site.git <br>
 
 
-**Installing dependencies** <br>
+**Installing dependencies** 
 
-- npm install or yarn add
+- npm install or yarn add <br> 
  
 ### `Getting Started`
 
-## npm start or <br>
-## yarn start <br>
+ npm start or <br>
+ yarn start <br>
 
 ### `Contributing`
 
